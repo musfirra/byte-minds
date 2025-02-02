@@ -10,11 +10,31 @@ body {
     position: relative;
     font-family: Arial, sans-serif;
 }
-
+.back
+{
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(37, 134, 106);
+    font-size: 16px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    top:50px;
+    left: 50px;
+    position: fixed;
+}
 h1{
     font-size: 50px;
+    margin-bottom: 0;
 }
-
+.sub{
+    margin-top: 8;
+    font-size: 14px;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 .container {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
@@ -45,6 +65,27 @@ select {
     font-size: 18px;
     padding-left: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.search-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.search-input {
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.search-icon {
+    position: absolute;
+    right: 0;
+    top: 30%;
+    transform: translateY(-50%);
+    cursor: pointer;
 }
 .start{
     width: 150px;
