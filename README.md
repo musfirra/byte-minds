@@ -1,32 +1,32 @@
-# [Project Name] 🎯
+# [study sphere] 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: [byet minds]
 
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Member 1: [musfira.ch] - [EMEA Arts and Science college kondotty]
+- 
+- 
 
 ### Hosted Project Link
-[mention your project hosted project link here]
+https://byte-minds.vercel.app/
 
 ### Project Description
-[2-3 lines about what your project does]
+[project is a resource pool for the calicut university studentswhere we ca get study materials]
 
 ### The Problem statement
-[What ridiculous problem are you solving?]
+[nothing much]
 
 ### The Solution
-[How are you solving it? Keep it fun!]
+[ya its b fine]
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
+- [html,css,js]
+- [figma used]
 - [Libraries used]
 - [Tools used]
 
