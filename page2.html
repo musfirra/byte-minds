@@ -7,30 +7,86 @@
     <link rel="stylesheet" href="page2.css">
 </head>
 <body>
+    <h1>Hey,welcome!</h1>
+    <p>"study Made Simple,"</p>
+    <input class="searchbar" type="text" id="search-bar" placeholder="Search..." aria-label="Search">
     <div class="container">
         <label for="select1">Choose course:</label>
         <select id="select1" name="COURSES">
+            <option value="" selected disabled>Select course</option>
             <option value="apple">BSC</option>
             <option value="banana">BA</option>
             <option value="cherry">BCOM</option>
             <option value="date">BVOC</option>
         </select>
 
-        <label for="select2">Choose subject:</label>
-        <select id="select2" name="SUBJECTS">
-            <option value="audi">Audi</option>
-            <option value="bmw">BMW</option>
-            <option value="mercedes">Mercedes</option>
-            <option value="volvo">Volvo</option>
+        <label for="select2">Choose semester:</label>
+        <select id="select2" name="SEMESTER">
+            <option value="" selected disabled>Select semester</option>
+            <option value="audi">1st</option>
+            <option value="bmw">2nd</option>
+            <option value="mercedes">3rd</select</option>
+            <option value="volvo">4th</option>
+            <option value="volvo">5th</option>
+            <option value="volvo">6th</option>
         </select>
 
-        <label for="select2">Choose year:</label>
-        <select id="select2" name="SUBJECTS">
-            <option value="audi">Audi</option>
+        <label for="select3">Choose subjects:</label>
+        <select id="select3" name="SUBJECTS">
+            <option value="" selected disabled>Select subject</option>
+            <option value="audi">mathematics</option>
             <option value="bmw">BMW</option>
             <option value="mercedes">Mercedes</option>
             <option value="volvo">Volvo</option>
         </select>
-    </div>
+    </div><br><br>
+    <div class="container2" id="container3">
+        <button class="center-button">Start</button>
+        <div class="div-container2" id="div-container2">
+          <div class="box"><a href="./BA.pdf" class="link">SYLLABUS</a></div>
+          <div class="box"><a href="./BA previous.pdf" class="link">PREVIOUS YEAR QUESTIONS</a></div>
+        </div>
+      </div>
+      
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const courseSelect = document.getElementById('select1');
+    const semesterSelect = document.getElementById('select2');
+    const subjectSelect = document.getElementById('select3');
+    const startButton = document.querySelector('.center-button');
+    const syllabusLink = document.querySelector('.link[href="#syllabus"]');
+    const questionsLink = document.querySelector('.link[href="#questions"]');
+    const divContainer2 = document.querySelector('.div-container2');
+
+    
+    divContainer2.style.display = 'none';
+
+
+    function checkSelections() {
+        if (courseSelect.value && semesterSelect.value && subjectSelect.value) {
+            startButton.disabled = false;
+        } else {
+            startButton.disabled = true;
+        }
+    }
+
+   
+    courseSelect.addEventListener('change', checkSelections);
+    semesterSelect.addEventListener('change', checkSelections);
+    subjectSelect.addEventListener('change', checkSelections);
+
+    
+    startButton.addEventListener('click', function() {
+        if (courseSelect.value && semesterSelect.value && subjectSelect.value) {
+            divContainer2.style.display = 'flex';
+        } else {
+            alert('Please make selections for course, semester, and subject.');
+        }
+    });
+});
+
+
+
+    </script>
 </body>
 </html>
